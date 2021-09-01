@@ -144,7 +144,7 @@ void *findMatches(void *params) {
 	roots[tid] = malloc(sizeof(comparison));
 	roots[tid]->expr = genexpr(tid, COUNT012);
 	roots[tid]->value = eval(roots[tid]->expr);
-	roots[tid]->error = magnitude(TARGET - DEFAULT);
+	roots[tid]->error = magnitude(TARGET - roots[tid]->value);
 	roots[tid]->left = roots[tid]->right = NULL;
 	roots[tid]->protected = 0;
 
