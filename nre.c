@@ -4,7 +4,7 @@
 #include "config.h"
 
 const int COUNT01 = COUNT0 + COUNT1;
-const int COUNT012 = COUNT01 + COUNT2;
+const int COUNT012 = COUNT0 + COUNT1 + COUNT2;
 
 typedef scalar (*f0)(void);
 typedef scalar (*f1)(scalar);
